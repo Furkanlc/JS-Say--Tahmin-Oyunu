@@ -33,7 +33,7 @@ document.querySelector('.check').addEventListener('click', function () {
 
         }
 
-
+//İnput ile eşleşmez ise
 
     } else if (guess != secretnumber) {
         if (scre > 1) {
@@ -50,6 +50,8 @@ document.querySelector('.check').addEventListener('click', function () {
     }
 
 });
+
+//Tekrar Oyunu Başlatma Butonu
 document.querySelector('.again').addEventListener('click', function () {
     scre = 20;
     secretnumber = Math.trunc(Math.random() * 20 + 1);
